@@ -59,7 +59,7 @@
   }
   .logo .dot{width:9px;height:9px;border-radius:50%;background:var(--gold);
     box-shadow:0 0 0 3px rgba(184,145,47,0.22);}
-  .brand-mark{width:32px;height:40px;flex-shrink:0;object-fit:contain;border-radius:3px;}
+  .brand-mark{width:26px;height:40px;flex-shrink:0;object-fit:contain;}
   .navlinks{display:flex;gap:34px;font-size:0.92rem;}
   .navlinks a{color:var(--ink-soft);border-bottom:2px solid transparent;padding-bottom:4px;transition:color .15s,border-color .15s;}
   .navlinks a:hover{color:var(--ink);border-color:var(--gold);}
@@ -227,7 +227,7 @@
   /* ---------- FOOTER ---------- */
   footer{background:#0A1428;color:#8791AC;padding:36px 0;font-size:0.85rem;}
   footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
-  footer .brand-mark{width:22px;height:28px;}
+  footer .brand-mark{width:18px;height:28px;}
   footer .foot-brand{display:flex;align-items:center;gap:10px;}
   footer a:hover{color:var(--gold-bright);}
 

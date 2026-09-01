@@ -13,7 +13,7 @@ Standard-Hosting.
 | `datenschutz.html`    | Datenschutzerklärung                                           |
 | `styles.css`          | Alle Styles                                                    |
 | `script.js`           | Mobiles Menü und Kontaktformular                               |
-| `assets/logo.svg`     | **Platzhalter-Wappen** – bitte durch das echte Logo ersetzen   |
+| `assets/logo.svg`     | Firmenwappen als Vektorgrafik                                  |
 | `assets/fonts.css`    | Einbindung der lokal gespeicherten Schriften                   |
 | `assets/fonts/`       | Schriftdateien (EB Garamond, Playfair Display, OFL 1.1)        |
 | `favicon.svg`         | Browser-Symbol                                                 |
@@ -47,11 +47,10 @@ Browser sofort sichtbar.
 
 **3. Die beiden gelben Hinweiskästen entfernen**, sobald die Angaben stehen.
 
-**4. Echtes Logo einsetzen.** `assets/logo.svg` ist nur ein Platzhalter.
-Das freigestellte Firmenlogo als `assets/logo.png` ablegen und in
-`index.html`, `impressum.html` und `datenschutz.html` alle acht Fundstellen
-von `logo.svg` auf `logo.png` ändern (in `index.html` auch in den
-Vorschaubild- und Suchmaschinen-Angaben am Seitenende):
+**4. Logo prüfen.** `assets/logo.svg` ist das Firmenwappen, als Vektor
+nachgezeichnet — dadurch in jeder Größe scharf und nur wenige Kilobyte groß.
+Wer stattdessen die Originaldatei einsetzen will, legt sie als
+`assets/logo.png` ab und stellt die Verweise um:
 
 ```
 grep -rl "logo.svg" *.html | xargs sed -i 's/logo\.svg/logo.png/g'

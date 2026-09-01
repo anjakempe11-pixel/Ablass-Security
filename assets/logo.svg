@@ -1,19 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 100" role="img" aria-label="Ablaß Security Wappen">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="200 130 720 1130" role="img" aria-label="Ablaß Security Wappen">
   <title>Ablaß Security</title>
   <defs>
-    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#182A50"/>
-      <stop offset="100%" stop-color="#0F1D38"/>
+    <linearGradient id="as-gold" x1="0.05" y1="0" x2="0.95" y2="1">
+      <stop offset="0%"   stop-color="#F4DCA4"/>
+      <stop offset="15%"  stop-color="#E6C57E"/>
+      <stop offset="38%"  stop-color="#D2AC5C"/>
+      <stop offset="58%"  stop-color="#E0BE74"/>
+      <stop offset="78%"  stop-color="#C79E48"/>
+      <stop offset="100%" stop-color="#B08A2C"/>
     </linearGradient>
-    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#D9B65B"/>
-      <stop offset="55%" stop-color="#B8912F"/>
-      <stop offset="100%" stop-color="#D9B65B"/>
+    <linearGradient id="as-rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#8A6A1E"/>
+      <stop offset="50%"  stop-color="#C9A24B"/>
+      <stop offset="100%" stop-color="#8A6A1E"/>
     </linearGradient>
+    <linearGradient id="as-sheen" x1="0" y1="0" x2="1" y2="0.4">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.32"/>
+      <stop offset="30%"  stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="55%"  stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Wappenform, mehrfach verwendet -->
+    <path id="as-schild" d="M560 148 L903 330 L896 700 C890 902 770 1088 560 1214 C350 1088 230 902 224 700 L217 330 Z"/>
   </defs>
-  <path d="M40 3 74 13v40c0 22-14 36-34 44C20 89 6 75 6 53V13L40 3Z" fill="url(#field)" stroke="url(#rim)" stroke-width="4" stroke-linejoin="round"/>
-  <path d="M40 12 66 20v33c0 18-11 29-26 36C25 82 14 71 14 53V20L40 12Z" fill="none" stroke="#2C3E64" stroke-width="1.5"/>
-  <path d="M18 46 40 33l22 13-22 13-22-13Z" fill="url(#rim)" opacity=".92"/>
-  <path d="M40 59v22" stroke="url(#rim)" stroke-width="3.4" stroke-linecap="round"/>
-  <circle cx="40" cy="26" r="3.6" fill="#D9B65B"/>
+
+  <!-- Dunkle Kante, die unter dem Gold hervorschaut -->
+  <use href="#as-schild" fill="#0E2A4A" transform="translate(0,16)"/>
+  <use href="#as-schild" fill="#0E2A4A"/>
+
+  <!-- Goldkoerper -->
+  <use href="#as-schild" fill="url(#as-gold)" stroke="url(#as-rim)" stroke-width="7" stroke-linejoin="round"/>
+  <use href="#as-schild" fill="url(#as-sheen)"/>
+
+  <!-- Innenlinie -->
+  <path d="M560 196 L862 356 L856 692 C851 872 744 1039 560 1154 C376 1039 269 872 264 692 L258 356 Z"
+        fill="none" stroke="#A5811F" stroke-width="6" stroke-opacity="0.75" stroke-linejoin="round"/>
+
+  <g fill="#0E2A4A">
+    <!-- Lambda mit Serifenfuessen -->
+    <path d="M560 244 L790 745 L818 745 L818 766 L655 766 L655 745 L674 745 L560 455
+             L446 745 L465 745 L465 766 L302 766 L302 745 L330 745 Z"/>
+
+    <!-- Zierlinie, in der Mitte vom Schloss unterbrochen -->
+    <path d="M282 832 L470 823 L470 851 L282 842 Z"/>
+    <path d="M838 832 L650 823 L650 851 L838 842 Z"/>
+
+    <!-- Schloss -->
+    <path d="M512 892 L512 846 A48 48 0 0 1 608 846 L608 892"
+          fill="none" stroke="#0E2A4A" stroke-width="28"/>
+    <rect x="462" y="884" width="196" height="154" rx="22"/>
+  </g>
+
+  <!-- Schluesselloch -->
+  <g fill="url(#as-gold)">
+    <circle cx="560" cy="944" r="26"/>
+    <path d="M547 962 L573 962 L581 1010 L539 1010 Z"/>
+  </g>
 </svg>
