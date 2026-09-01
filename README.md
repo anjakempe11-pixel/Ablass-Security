@@ -13,10 +13,12 @@ Standard-Hosting.
 | `datenschutz.html`    | Datenschutzerklärung                                           |
 | `styles.css`          | Alle Styles                                                    |
 | `script.js`           | Mobiles Menü und Kontaktformular                               |
-| `assets/logo.svg`     | Firmenwappen als Vektorgrafik                                  |
+| `assets/logo.png`     | Firmenwappen, freigestellt und web-tauglich gerechnet          |
+| `assets/logo-original.png` | Originaldatei, unverändert als Archiv                     |
 | `assets/fonts.css`    | Einbindung der lokal gespeicherten Schriften                   |
 | `assets/fonts/`       | Schriftdateien (EB Garamond, Playfair Display, OFL 1.1)        |
-| `favicon.svg`         | Browser-Symbol                                                 |
+| `favicon.png`         | Symbol im Browser-Tab                                          |
+| `apple-touch-icon.png`| Symbol auf dem Startbildschirm von Handys                      |
 | `robots.txt`, `sitemap.xml` | Angaben für Suchmaschinen                                |
 
 ## Lokal ansehen
@@ -47,14 +49,12 @@ Browser sofort sichtbar.
 
 **3. Die beiden gelben Hinweiskästen entfernen**, sobald die Angaben stehen.
 
-**4. Logo prüfen.** `assets/logo.svg` ist das Firmenwappen, als Vektor
-nachgezeichnet — dadurch in jeder Größe scharf und nur wenige Kilobyte groß.
-Wer stattdessen die Originaldatei einsetzen will, legt sie als
-`assets/logo.png` ab und stellt die Verweise um:
-
-```
-grep -rl "logo.svg" *.html | xargs sed -i 's/logo\.svg/logo.png/g'
-```
+**4. Logo — erledigt.** Das Firmenwappen ist eingebaut. Die hochgeladene
+Datei hatte einen weißen Hintergrund und hätte auf dem cremefarbenen
+Seitenhintergrund einen sichtbaren Kasten ergeben; sie wurde freigestellt,
+auf das Wappen beschnitten und von 1,4 MB auf 74 KB gerechnet. Die
+Originaldatei liegt unverändert als `assets/logo-original.png` daneben —
+die braucht die Website nicht, sie kann vor dem Hochladen gelöscht werden.
 
 **5. Adresse prüfen.** Hinterlegt sind Beethovenstraße 46, 07973 Greiz und
 0178 142 42 21 — bitte einmal gegenlesen, die Postleitzahl ist ergänzt.
