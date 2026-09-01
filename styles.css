@@ -53,8 +53,9 @@
   a.logo:hover{color:var(--ink);}
   .logo{
     font-family:'Playfair Display',serif;
-    color:var(--ink);font-size:1.2rem;font-weight:700;
-    text-transform:uppercase;letter-spacing:0.05em;
+    color:var(--ink);font-size:1.28rem;font-weight:700;
+    /* Bewusst keine Grossschreibung: aus dem ss wuerde sonst "ABLASS" */
+    letter-spacing:0.02em;
     display:flex;align-items:center;gap:10px;
   }
   .logo .dot{width:9px;height:9px;border-radius:50%;background:var(--gold);
@@ -106,7 +107,8 @@
 
   .stat-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:52px;}
   .stat-row .stat{border-left:2px solid var(--gold);padding-left:14px;}
-  .stat b{display:block;font-family:'Playfair Display',serif;font-size:1.7rem;color:#fff;}
+  /* mitskalierend, damit auch lange Woerter wie "Inhabergefuehrt" in die Spalte passen */
+  .stat b{display:block;font-family:'Playfair Display',serif;font-size:clamp(1.2rem,1.6vw,1.45rem);color:#fff;}
   .stat span{font-size:0.82rem;color:var(--fog);}
 
   /* --- radar signature --- */
@@ -375,3 +377,10 @@
     .wrap{padding:0 20px;}
     .mobile-menu a{padding-left:20px;padding-right:20px;}
   }
+
+  /* ---------- Karriere ---------- */
+  .karriere{background:var(--navy);color:#fff;text-align:center;}
+  .karriere .wrap{max-width:760px;}
+  .karriere h2{color:#fff;font-size:clamp(1.9rem,3vw,2.5rem);margin-top:12px;}
+  .karriere .lede{color:var(--fog);margin:18px auto 32px;line-height:1.7;font-size:1.05rem;}
+  .karriere .hero-ctas{justify-content:center;}
