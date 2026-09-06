@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.ablass-security.de/sitemap.xml
+Sitemap: https://anjakempe11-pixel.github.io/Ablass-Security/sitemap.xml
